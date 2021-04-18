@@ -1,0 +1,23 @@
+{
+  "name": "meeting-app",
+  "version": "1.0.0",
+  "description": "This is an application for tracking meetings",
+  "main": "back.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "node": "^15.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node back.js"
+  
+  },
+  "keywords": [
+    "myapp",
+    "heroku"
+  ],
+  "author": "ashutosh_sahay",
+  "license": "MIT"
+}
