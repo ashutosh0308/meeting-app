@@ -1,0 +1,248 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*===== VARIABLES CSS =====*/
+:root{
+  --nav-width: 92px;
+
+  /*===== Colores =====*/
+  --first-color: #d9dfeb;
+  --bg-color: #1E5F74;
+  --sub-color: #B6CEFC;
+  --white-color: #FFF;
+  
+  /*===== Fuente y tipografia =====*/
+  --body-font: 'Poppins', sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+  
+  --z-fixed: 100;
+}
+
+
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  margin: 0;
+  padding: 2rem 0 0 6.75rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: .5s;
+  background-color: #E5E5E5;
+}
+h1{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+p{
+    padding-top: 5vh;
+    padding-left: 4vw;
+}
+ol{
+    padding-left: 5vw;
+
+}
+
+/*===== l NAV =====*/
+.l-navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--nav-width);
+  height: 100vh;
+  background-color: #1E5F74;;
+  color: #FFF;
+  padding: 1.5rem 1.5rem 2rem;
+  transition: .5s;
+  z-index: var(--z-fixed);
+}
+
+/*===== NAV =====*/
+.nav{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.nav__brand{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.nav__toggle{
+  font-size: 1.25rem;
+  padding: .75rem;
+  cursor: pointer;
+}
+.nav__logo{
+  color:#FFF;
+  font-weight: 600;
+}
+
+.nav__link{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: .75rem;
+  padding: .75rem;
+  color: #FFF;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  transition: .3s;
+  cursor: pointer;
+}
+.nav__link:hover{
+  background-color:#133B5C;;
+}
+.nav__icon{
+  font-size: 1.25rem;
+}
+.nav__name{
+  font-size: var(--small-font-size);
+}
+
+/*Expander menu*/
+.expander{
+  width: calc(var(--nav-width) + 9.25rem);
+}
+
+/*Add padding body*/
+.body-pd{
+  padding: 2rem 0 0 16rem;
+}
+
+/*Active links menu*/
+.active{
+  background-color: #133B5C;
+}
+
+
+.collapse{
+  grid-template-columns: 20px max-content 1fr;
+}
+.collapse__link{
+  justify-self: flex-end;
+  transition: .5s;
+}
+.collapse__menu{
+  display: none;
+  padding: .75rem 2.25rem;
+}
+.collapse__sublink{
+  color: #B6CEFC;
+  font-size: var(--small-font-size);
+}
+.collapse__sublink:hover{
+  color: #133B5C;
+}
+
+/*Show collapse*/
+.showCollapse{
+  display: block;
+}
+
+/*Rotate icon*/
+.rotate{
+  transform: rotate(180deg);
+}
+
+.child1{
+    margin-left: 2vw;
+
+}
+
+.child2{
+    background-color: #FFF;
+    width: 90%;
+    height: 30%;
+    margin-top: 10vh;
+    margin-left: 2vw;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.child3{
+    background-color: #FFF;
+    width: 90%;
+    height: 50vh;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.table{
+    margin-left:4vw;
+    padding-top: 4vh;
+    width:90% ;  
+}
+
+.tableHead{
+    color:  #1E5F74;
+    font-weight: bold;
+}
+.inputs{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-right: 4vw;
+    padding-left: 1vw;
+}
+.ip,.ipsearch{
+    margin-left:0.5vw ;
+    margin-right: 1vw;
+    height: 5vh;
+    outline: none;  
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #fff;
+}
+#tinp1,#tinp2,#tinp3,#tinp4,#tinp5,#tinp6{
+    padding-top:2vh;
+    outline: none;  
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #fff;
+}
+.ipsearch{
+    background-image: url("search_black_24dp.svg");    
+    background-repeat: no-repeat;
+    padding-left: 2vw;
+    background-position: 0vw 0.2vh;
+}
+.label{
+    margin-left:5vw;
+    font-size: 1.75vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#b1{
+    border-radius: 4px;
+    background-color: #1E5F74;
+    height: 4.5vh;
+    width: 4vw;
+    color: #fff;
+    cursor:pointer
+}
+#b2{
+    background-image: url("delete_black_24dp.svg");
+    background-position: 1vw 0.1vh;
+    border-radius: 70%;
+    background-color: #fff;
+    height: 4.5vh;
+    width: 4vw;
+    background-repeat: no-repeat;
+    cursor:pointer
+}

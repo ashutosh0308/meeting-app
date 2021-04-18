@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" type='text/css' href="../public/style.css">
+        
+        <title>Meeting App</title>
+    </head>
+    <body id="body-pd">
+        <div class="l-navbar" id="navbar">
+            <nav class="nav">
+                <div>
+                    <div class="nav__brand">
+                        <img src='../public/menu_white_24dp.svg' alt='menu' class="nav__toggle" id="nav-toggle">
+                        <a href="#" class="nav__logo">1805648</a>
+                    </div>
+                    <div class="nav__list">
+                        <a href="/" class="nav__link active">
+                            <img src='../public/home_white_24dp.svg' alt='home'id="home">
+                            <span class="nav__name">Home</span>
+                        </a>
+                        <a href="/aboutme" class="nav__link">
+                            <img src='../public/face_white_24dp.svg' alt='face'>
+                        <span class="nav__name" >About Me</span>
+                        </a>
+
+                        
+            </nav>
+        </div>
+        <div class="parent">
+            <div class="child1">
+                <h1>MY MEETINGS</h1>
+            </div>
+
+            <div class="child2">
+                <div class="inputs">
+                    <input type="search" onkeyup="search()"  placeholder="Search" class="ipsearch" id="ipsearch">
+                 <label class="label">From :</label><input type="date" placeholder="From"class="ip" >
+                 <label class="label">To :</label>   <input type="date" placeholder="To" class="ip">
+                </div>
+
+            </div>
+
+            <div class="child3">
+                <table class="table" id="table">
+                    <tr >
+                        <td class="tableHead">Sl. no.</td>
+                        <td class="tableHead">Meeting Name</td>
+                        <td class="tableHead">No. of People</td>
+                        <td class="tableHead">Date</td>
+                        <td class="tableHead">Start Time</td>
+                        <td class="tableHead">End Time</td>
+                        <td class="tableHead">Actions</td>
+                    </tr>
+                    <tr id="fill">
+                        <td ></td>
+                        <td ><input type="text" value="" id="tinp1" required ></td>
+                        <td ><input type="text" value="" id="tinp2" required></td>
+                        <td ><input type="date" value="" id="tinp3"required></td>
+                        <td ><input type="time" value="" id="tinp4"required></td>
+                        <td ><input type="time" value="" id="tinp5"></td>
+                        <td ><button id="b1" onclick="addRows()">Add</button></td>  
+                        </tr>
+                </table>
+                           
+            </div>
+
+
+
+        </div>
+
+       
+        
+        <!-- ===== MAIN JS ===== -->
+        <script src="../public/app.js"></script>
+    </body>
+</html>
